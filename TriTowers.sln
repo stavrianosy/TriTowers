@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TriTowers", "TriTowers\TriTowers.csproj", "{4BB710F2-9019-476D-AAA7-7E25DF4AC321}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TriTowers", "TriTowers.csproj", "{4BB710F2-9019-476D-AAA7-7E25DF4AC321}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
