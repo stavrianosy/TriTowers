@@ -8,6 +8,8 @@
     mc:Ignorable="d">
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
-
+        <Button Tapped="btnGo">
+            <TextBlock Text="GO"></TextBlock>
+        </Button>
     </Grid>
 </Page>

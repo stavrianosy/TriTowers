@@ -34,5 +34,10 @@ namespace TriTowers
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
         }
+
+        private void btnGo(object sender, TappedRoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Pages.Deck));
+        }
     }
 }
