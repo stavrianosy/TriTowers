@@ -9,172 +9,197 @@
 
     <Canvas>
     <Canvas x:Name="cnvFirst" Canvas.Left="90">
-            <Border Width="70" Height="110" Background="DarkCyan" Canvas.Left="155" Canvas.Top="109" Tapped="cardTower1_Tapped">
-                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="60">1</TextBlock>
+            <Border Width="70" Height="110"  Canvas.Left="155" Canvas.Top="109" >
+                <Image Source="/Assets/Cards/back1.png" Tapped="cardTower1_Tapped"></Image>
             </Border>
             <Border Width="70" Height="110" Background="DarkBlue" Canvas.Left="120" Canvas.Top="171" Tapped="cardTower1_Tapped">
-                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="60">1</TextBlock>
+                <Image Source="/Assets/Cards/back1.png"></Image>
             </Border>
             <Border Width="70" Height="110" Background="DarkBlue" Canvas.Left="195" Canvas.Top="171" Tapped="cardTower1_Tapped">
-                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="60">1</TextBlock>
+                <Image Source="/Assets/Cards/back1.png"></Image>
             </Border>
 
         <Border Width="70" Height="110" Background="#FF138B00" Canvas.Left="80" Canvas.Top="230" Tapped="cardTower1_Tapped">
-                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="60">1</TextBlock>
+                <Image Source="/Assets/Cards/back1.png"></Image>
             </Border>
         <Border Width="70" Height="110" Background="#FF138B00" Canvas.Left="155" Canvas.Top="230" Tapped="cardTower1_Tapped">
-                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="60">1</TextBlock>
+                <Image Source="/Assets/Cards/back1.png"></Image>
             </Border>
         <Border Width="70" Height="110" Background="#FF138B00" Canvas.Left="230" Canvas.Top="230" Tapped="cardTower1_Tapped">
-                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="60">1</TextBlock>
+                <Image Source="/Assets/Cards/back1.png"></Image>
             </Border>
 
         <Border Width="70" Height="110" Background="#FF8B007E" Canvas.Left="45" Canvas.Top="286" Tapped="cardTower1_Tapped">
-                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="60">1</TextBlock>
+                <Image Source="/Assets/Cards/back1.png"></Image>
             </Border>
         <Border Width="70" Height="110" Background="#FF8B007E" Canvas.Left="120" Canvas.Top="286" Tapped="cardTower1_Tapped">
-                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="60">1</TextBlock>
+                <Image Source="/Assets/Cards/back1.png"></Image>
             </Border>
         <Border Width="70" Height="110" Background="#FF8B007E" Canvas.Left="195" Canvas.Top="286" Tapped="cardTower1_Tapped">
-                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="60">1</TextBlock>
+                <Image Source="/Assets/Cards/back1.png"></Image>
             </Border>
         <Border Width="70" Height="110" Background="#FF8B007E" Canvas.Left="270" Canvas.Top="286" Tapped="cardTower1_Tapped">
-                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="60">1</TextBlock>
+                <Image Source="/Assets/Cards/back1.png"></Image>
             </Border>
 
         <Border Width="70" Height="110" Background="#FFB08B10" Canvas.Top="340" Tapped="cardTower1_Tapped">
-                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="60">1</TextBlock>
+                <Image Source="/Assets/Cards/back1.png"></Image>
             </Border>
         <Border Width="70" Height="110" Background="#FFB08B10" Canvas.Left="75" Canvas.Top="340" Tapped="cardTower1_Tapped">
-                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="60">1</TextBlock>
+                <Image Source="/Assets/Cards/back1.png"></Image>
             </Border>
         <Border Width="70" Height="110" Background="#FFB08B10" Canvas.Left="150" Canvas.Top="340" Tapped="cardTower1_Tapped">
-                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="60">1</TextBlock>
+                <Image Source="/Assets/Cards/back1.png"></Image>
             </Border>
         <Border Width="70" Height="110" Background="#FFB08B10" Canvas.Left="225" Canvas.Top="340" Tapped="cardTower1_Tapped">
-                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="60">1</TextBlock>
+                <Image Source="/Assets/Cards/back1.png"></Image>
             </Border>
-            <Border Width="70" Height="110" Background="#FFB08B10" Canvas.Left="300" Canvas.Top="340" Tapped="cardTower1_Tapped">
-                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="60">1</TextBlock>
+            <Border Width="70" Height="110" Background="#FFB08B10" Canvas.Left="300" Canvas.Top="340">
+                <Image Source="/Assets/Cards/back1.png" Tapped="cardTower1_Tapped"></Image>
             </Border>
         </Canvas>
     <Canvas x:Name="cnvSecond" Canvas.Left="510">
         <Border Width="70" Height="110" Background="DarkCyan" Canvas.Left="155" Canvas.Top="109" Tapped="cardTower2_Tapped">
-                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="60">1</TextBlock>
+                <Image Source="/Assets/Cards/back1.png"></Image>
             </Border>
 
         <Border Width="70" Height="110" Background="DarkBlue" Canvas.Left="120" Canvas.Top="171" Tapped="cardTower2_Tapped">
-                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="60">1</TextBlock>
+                <Image Source="/Assets/Cards/back1.png"></Image>
             </Border>
         <Border Width="70" Height="110" Background="DarkBlue" Canvas.Left="195" Canvas.Top="171" Tapped="cardTower2_Tapped">
-                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="60">1</TextBlock>
+                <Image Source="/Assets/Cards/back1.png"></Image>
             </Border>
 
         <Border Width="70" Height="110" Background="#FF138B00" Canvas.Left="80" Canvas.Top="230" Tapped="cardTower2_Tapped">
-                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="60">1</TextBlock>
+                <Image Source="/Assets/Cards/back1.png"></Image>
             </Border>
         <Border Width="70" Height="110" Background="#FF138B00" Canvas.Left="155" Canvas.Top="230" Tapped="cardTower2_Tapped">
-                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="60">1</TextBlock>
+                <Image Source="/Assets/Cards/back1.png"></Image>
             </Border>
         <Border Width="70" Height="110" Background="#FF138B00" Canvas.Left="230" Canvas.Top="230" Tapped="cardTower2_Tapped">
-                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="60">1</TextBlock>
+                <Image Source="/Assets/Cards/back1.png"></Image>
             </Border>
 
         <Border Width="70" Height="110" Background="#FF8B007E" Canvas.Left="45" Canvas.Top="286" Tapped="cardTower2_Tapped">
-                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="60">1</TextBlock>
+                <Image Source="/Assets/Cards/back1.png"></Image>
             </Border>
         <Border Width="70" Height="110" Background="#FF8B007E" Canvas.Left="120" Canvas.Top="286" Tapped="cardTower2_Tapped">
-                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="60">1</TextBlock>
+                <Image Source="/Assets/Cards/back1.png"></Image>
             </Border>
         <Border Width="70" Height="110" Background="#FF8B007E" Canvas.Left="195" Canvas.Top="286" Tapped="cardTower2_Tapped">
-                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="60">1</TextBlock>
+                <Image Source="/Assets/Cards/back1.png"></Image>
             </Border>
         <Border Width="70" Height="110" Background="#FF8B007E" Canvas.Left="270" Canvas.Top="286" Tapped="cardTower2_Tapped">
-                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="60">1</TextBlock>
+                <Image Source="/Assets/Cards/back1.png"></Image>
             </Border>
 
         <Border Width="70" Height="110" Background="#FFB08B10" Canvas.Top="340" Tapped="cardTower2_Tapped">
-                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="60">1</TextBlock>
+                <Image Source="/Assets/Cards/back1.png"></Image>
             </Border>
         <Border Width="70" Height="110" Background="#FFB08B10" Canvas.Left="75" Canvas.Top="340" Tapped="cardTower2_Tapped">
-                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="60">1</TextBlock>
+                <Image Source="/Assets/Cards/back1.png"></Image>
             </Border>
         <Border Width="70" Height="110" Background="#FFB08B10" Canvas.Left="150" Canvas.Top="340" Tapped="cardTower2_Tapped">
-                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="60">1</TextBlock>
+                <Image Source="/Assets/Cards/back1.png"></Image>
             </Border>
         <Border Width="70" Height="110" Background="#FFB08B10" Canvas.Left="225" Canvas.Top="340" Tapped="cardTower2_Tapped">
-                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="60">1</TextBlock>
+                <Image Source="/Assets/Cards/back1.png"></Image>
             </Border>
         <Border Width="70" Height="110" Background="#FFB08B10" Canvas.Left="300" Canvas.Top="340" Tapped="cardTower2_Tapped">
-                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="60">1</TextBlock>
+                <Image Source="/Assets/Cards/back1.png"></Image>
             </Border>
     </Canvas>
     <Canvas x:Name="cnvThird" Canvas.Left="940">
     <Border Width="70" Height="110" Background="DarkCyan" Canvas.Left="155" Canvas.Top="109" Tapped="cardTower3_Tapped">
-                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="60">1</TextBlock>
+                <Image Source="/Assets/Cards/back1.png"></Image>
             </Border>
 
     <Border Width="70" Height="110" Background="DarkBlue" Canvas.Top="171" Tapped="cardTower3_Tapped" Canvas.Left="120">
-                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="60">1</TextBlock>
+                <Image Source="/Assets/Cards/back1.png"></Image>
             </Border>
     <Border Width="70" Height="110" Background="DarkBlue" Canvas.Top="171" Tapped="cardTower3_Tapped" Canvas.Left="195">
-                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="60">1</TextBlock>
+                <Image Source="/Assets/Cards/back1.png"></Image>
             </Border>
 
             <Border Width="70" Height="110" Background="#FF138B00" Canvas.Left="80" Canvas.Top="230" Tapped="cardTower3_Tapped">
-                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="60">1</TextBlock>
+                <Image Source="/Assets/Cards/back1.png"></Image>
             </Border>
             <Border Width="70" Height="110" Background="#FF138B00" Canvas.Left="155" Canvas.Top="230" Tapped="cardTower3_Tapped">
-                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="60">1</TextBlock>
+                <Image Source="/Assets/Cards/back1.png"></Image>
             </Border>
     <Border Width="70" Height="110" Background="#FF138B00" Canvas.Left="230" Canvas.Top="230" Tapped="cardTower3_Tapped">
-                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="60">1</TextBlock>
+                <Image Source="/Assets/Cards/back1.png"></Image>
             </Border>
 
             <Border Width="70" Height="110" Background="#FF8B007E" Canvas.Top="286" Tapped="cardTower3_Tapped" Canvas.Left="45">
-                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="60">1</TextBlock>
+                <Image Source="/Assets/Cards/back1.png"></Image>
             </Border>
             <Border Width="70" Height="110" Background="#FF8B007E" Canvas.Top="286" Tapped="cardTower3_Tapped" Canvas.Left="120">
-                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="60">1</TextBlock>
+                <Image Source="/Assets/Cards/back1.png"></Image>
             </Border>
             <Border Width="70" Height="110" Background="#FF8B007E" Canvas.Top="286" Tapped="cardTower3_Tapped" Canvas.Left="195">
-                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="60">1</TextBlock>
+                <Image Source="/Assets/Cards/back1.png"></Image>
             </Border>
             <Border Width="70" Height="110" Background="#FF8B007E" Canvas.Top="286" Tapped="cardTower3_Tapped" Canvas.Left="270">
-                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="60">1</TextBlock>
+                <Image Source="/Assets/Cards/back1.png"></Image>
             </Border>
 
             <Border Width="70" Height="110" Background="#FFB08B10" Canvas.Top="340" Tapped="cardTower3_Tapped">
-                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="60">1</TextBlock>
+                <Image Source="/Assets/Cards/back1.png"></Image>
             </Border>
             <Border Width="70" Height="110" Background="#FFB08B10" Canvas.Top="340" Tapped="cardTower3_Tapped" Canvas.Left="75">
-                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="60">1</TextBlock>
+                <Image Source="/Assets/Cards/back1.png"></Image>
             </Border>
             <Border Width="70" Height="110" Background="#FFB08B10" Canvas.Top="340" Tapped="cardTower3_Tapped" Canvas.Left="150">
-                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="60">1</TextBlock>
+                <Image Source="/Assets/Cards/back1.png"></Image>
             </Border>
             <Border Width="70" Height="110" Background="#FFB08B10" Canvas.Top="340" Tapped="cardTower3_Tapped" Canvas.Left="225">
-                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="60">1</TextBlock>
+                <Image Source="/Assets/Cards/back1.png"></Image>
             </Border>
             <Border Width="70" Height="110" Background="#FFB08B10" Canvas.Top="340" Tapped="cardTower3_Tapped" Canvas.Left="300">
-                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="60">1</TextBlock>
+                <Image Source="/Assets/Cards/back1.png"></Image>
             </Border>
         </Canvas>
         <Canvas x:Name="cnvDeck" Canvas.Left="615" Canvas.Top="515">
-            <Border Width="70" Height="110" Background="#FF15CADC" Tapped="cardDeck_Tapped" ></Border>
-            <Border Width="70" Height="110" Background="#FF15CADC" Tapped="cardDeck_Tapped" ></Border>
-            <Border Width="70" Height="110" Background="#FF15CADC" Tapped="cardDeck_Tapped" ></Border>
-            <Border Width="70" Height="110" Background="#FF15CADC" Tapped="cardDeck_Tapped" ></Border>
-            <Border Width="70" Height="110" Background="#FF15CADC" Tapped="cardDeck_Tapped" ></Border>
-            <Border Width="70" Height="110" Background="#FF15CADC" Tapped="cardDeck_Tapped" ></Border>
-            <Border Width="70" Height="110" Background="#FF15CADC" Tapped="cardDeck_Tapped" ></Border>
-            <Border Width="70" Height="110" Background="#FF15CADC" Tapped="cardDeck_Tapped" ></Border>
+            <Border Width="70" Height="110" Background="#FF15CADC" Tapped="cardDeck_Tapped" >
+                <Image Source="/Assets/Cards/back1.png"></Image>
+            </Border>
+            <Border Width="70" Height="110" Background="#FF15CADC" Tapped="cardDeck_Tapped" ><Image Source="/Assets/Cards/back1.png"></Image></Border>
+            <Border Width="70" Height="110" Background="#FF15CADC" Tapped="cardDeck_Tapped" ><Image Source="/Assets/Cards/back1.png"></Image></Border>
+            <Border Width="70" Height="110" Background="#FF15CADC" Tapped="cardDeck_Tapped" ><Image Source="/Assets/Cards/back1.png"></Image></Border>
+            <Border Width="70" Height="110" Background="#FF15CADC" Tapped="cardDeck_Tapped" ><Image Source="/Assets/Cards/back1.png"></Image></Border>
+            <Border Width="70" Height="110" Background="#FF15CADC" Tapped="cardDeck_Tapped" ><Image Source="/Assets/Cards/back1.png"></Image></Border>
+            <Border Width="70" Height="110" Background="#FF15CADC" Tapped="cardDeck_Tapped" ><Image Source="/Assets/Cards/back1.png"></Image></Border>
+            <Border Width="70" Height="110" Background="#FF15CADC" Tapped="cardDeck_Tapped" ><Image Source="/Assets/Cards/back1.png"></Image></Border>
         </Canvas>
         <Border x:Name="rectCardOnHand" Width="70" Height="110" Background="#FF15CADC" Canvas.Left="690" Canvas.Top="515">
-            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="60">1</TextBlock>
+            <Image Source="/Assets/Cards/back1.png"></Image>
         </Border>
-        <Button BorderBrush="Red" Foreground="Red" Canvas.Left="800" Canvas.Top="587">
+        <Button BorderBrush="Red" Foreground="Red" Tapped="btnStart_Tapped" Canvas.Left="800" Canvas.Top="587">
             <TextBlock Text="Restart" Tapped="txtRestart_Tapped"></TextBlock>
         </Button>
-    </Canvas>
+        <Button BorderBrush="Red" Foreground="Red" Tapped="btnStart_Tapped" Canvas.Left="890" Canvas.Top="587">
+            <TextBlock Text="Start" ></TextBlock>
+        </Button>
+        <Button x:Name="btnNextStage" IsEnabled="true" BorderBrush="Red" Foreground="Red" Canvas.Left="965" Canvas.Top="587">
+            <TextBlock Text="Next Stage" Tapped="btnNextStage_Tapped" ></TextBlock>
+        </Button>
+        <TextBlock x:Name="txtPoints" Canvas.Left="440" TextWrapping="Wrap" Text="aaa" Canvas.Top="35" Height="46" Width="70" Foreground="Red" FontSize="24"/>
+        <TextBlock x:Name="txtStage" Canvas.Left="515" TextWrapping="Wrap" Text="aaa" Canvas.Top="35" Height="46" Width="70" Foreground="Red" FontSize="24"/>
+        <Canvas x:Name="cnvTop"  Canvas.Top="0">
+            <Image Source="/Assets/counter.jpg" Canvas.Left="665" ></Image>
+            <TextBlock x:Name="txtTimer" 
+                       Canvas.Left="665" 
+                       TextWrapping="Wrap" 
+                       Text="60" 
+                       Canvas.Top="19" 
+                       Height="46" 
+                       Width="63" 
+                       Foreground="Black" 
+                       FontSize="30" TextAlignment="Center"/>
+        </Canvas>
+        <Canvas x:Name="cnvBottom" Canvas.Left="615" Canvas.Top="515">
+            <Image Source="/Assets/console.jpg" Canvas.Left="-301" Canvas.Top="175"></Image>
+        </Canvas>
+    </Canvas>    
 </Page>
