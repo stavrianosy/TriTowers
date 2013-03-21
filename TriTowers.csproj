@@ -100,9 +100,6 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
@@ -112,21 +109,63 @@
     <Compile Include="Common\LayoutAwarePage.cs" />
     <Compile Include="Common\RichTextColumns.cs" />
     <Compile Include="Common\SuspensionManager.cs" />
+    <Compile Include="Controls\Flyouts\Bonus.xaml.cs">
+      <DependentUpon>Bonus.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Flyouts\FinishedGameHiScore.xaml.cs">
+      <DependentUpon>FinishedGameHiScore.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Flyouts\NextRound.xaml.cs">
+      <DependentUpon>NextRound.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Flyouts\Instructions.xaml.cs">
+      <DependentUpon>Instructions.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Flyouts\PausedGame.xaml.cs">
+      <DependentUpon>PausedGame.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Flyouts\FinishedGame.xaml.cs">
+      <DependentUpon>FinishedGame.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Flyouts\LostGame.xaml.cs">
+      <DependentUpon>LostGame.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Flyouts\StartGame.xaml.cs">
+      <DependentUpon>StartGame.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\BaseItem.cs" />
+    <Compile Include="DataModel\GameDataSource.cs" />
+    <Compile Include="DataModel\GameItem.cs" />
+    <Compile Include="DataModel\StorageUtility.cs" />
+    <Compile Include="DataModel\Test.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\Deck.xaml.cs">
       <DependentUpon>Deck.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Instructions.xaml.cs">
+      <DependentUpon>Instructions.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModel\Card.cs" />
+    <Compile Include="ViewModel\CardIdentifier.cs" />
+    <Compile Include="ViewModel\InGame.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
+    <None Include="packages.config" />
     <None Include="TriTowers_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\btnNextRound.jpg" />
+    <Content Include="Assets\btnNextRoundovr.jpg" />
+    <Content Include="Assets\btnSameGame.jpg" />
+    <Content Include="Assets\btnSameGameovr.jpg" />
+    <Content Include="Assets\btnStart.jpg" />
+    <Content Include="Assets\btnStartovr.jpg" />
     <Content Include="Assets\Cards\10c.png" />
     <Content Include="Assets\Cards\10d.png" />
     <Content Include="Assets\Cards\10h.png" />
@@ -184,6 +223,11 @@
     <Content Include="Assets\console.jpg" />
     <Content Include="Assets\counter.jpg" />
     <Content Include="Assets\Logo.png" />
+    <Content Include="Assets\msg1.png" />
+    <Content Include="Assets\msg2.png" />
+    <Content Include="Assets\msg3.png" />
+    <Content Include="Assets\msg4.jpg" />
+    <Content Include="Assets\separator.jpg" />
     <Content Include="Assets\SmallLogo.png" />
     <Content Include="Assets\SplashScreen.png" />
     <Content Include="Assets\StoreLogo.png" />
@@ -198,6 +242,38 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Controls\Flyouts\Bonus.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Flyouts\FinishedGameHiScore.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Flyouts\NextRound.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Flyouts\Instructions.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Flyouts\PausedGame.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Flyouts\FinishedGame.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Flyouts\LostGame.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Flyouts\StartGame.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -206,6 +282,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\Instructions.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Callisto">
+      <HintPath>packages\Callisto.1.2.6\lib\winrt45\Callisto.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0' ">
     <VisualStudioVersion>11.0</VisualStudioVersion>

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using TriTowers.DataModel;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.Foundation;
@@ -31,6 +32,8 @@ namespace TriTowers
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+
+            GameDataSource = new GameDataSource();
         }
 
         /// <summary>
@@ -86,5 +89,12 @@ namespace TriTowers
             //TODO: Save application state and stop any background activity
             deferral.Complete();
         }
+
+        public static App Instance
+        {
+            get { return ((App)Current); }
+        }
+
+        public GameDataSource GameDataSource { get; set; }
     }
 }

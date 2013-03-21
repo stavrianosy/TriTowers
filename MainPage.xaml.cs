@@ -33,11 +33,21 @@ namespace TriTowers
         /// property is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+            ContinueLoading();
         }
 
         private void btnGo(object sender, TappedRoutedEventArgs e)
         {
             Frame.Navigate(typeof(Pages.Deck));
+        }
+
+        private void btnInstructions(object sender, TappedRoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Pages.Instructions));
+        }
+        void ContinueLoading()
+        {
+            App.Instance.GameDataSource.LoadCachedGameItem();
         }
     }
 }
