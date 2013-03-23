@@ -226,7 +226,10 @@ namespace TriTowers.Pages
             {
                 inGame = new InGame();
                 inGame.HiScore = App.Instance.GameDataSource.GameStats.Score;
+                inGame.HiScoreDate = App.Instance.GameDataSource.GameStats.Date;
+
                 txtHiScore.Text = inGame.HiScore.ToString();
+                txtHiScoreDate.Text = inGame.HiScoreDate.ToString("dd/MM/yyyy");
             }
             catch (Exception)
             {                
@@ -804,11 +807,14 @@ namespace TriTowers.Pages
         {
             if (inGame.Points > inGame.HiScore)
             {
-                var game = new GameItem(){Score=inGame.Points};
+                var game = new GameItem() { Score = inGame.Points, Date = DateTime.Now };
                 await App.Instance.GameDataSource.SaveGameStats(game);
 
-                inGame.HiScore = inGame.Points;
+                inGame.HiScore = game.Score;
+                inGame.HiScoreDate = game.Date;
+
                 txtHiScore.Text = inGame.HiScore.ToString();
+                txtHiScoreDate.Text = inGame.HiScoreDate.ToString("dd/MM/yyyy");
 
                 DisplayFlyout_FinishedGameWithHiScore();
             }

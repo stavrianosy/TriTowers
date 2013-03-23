@@ -48,6 +48,7 @@ namespace TriTowers.ViewModel
         public bool GameIsPaused { get; set; }
         public int ShowCardsFor { get; set; }
         public int HiScore { get; set; }
+        public DateTime HiScoreDate { get; set; }
         
         public InGame()
         {
@@ -76,6 +77,7 @@ namespace TriTowers.ViewModel
             GameIsPaused = false;
             ShowCardsFor = 5;
             HiScore = 0;
+            HiScoreDate = DateTime.Now;
         }
     }
 

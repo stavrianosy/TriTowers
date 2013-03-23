@@ -160,8 +160,13 @@
     <None Include="TriTowers_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\btnHiScores.png" />
+    <Content Include="Assets\btnInstructions.png" />
+    <Content Include="Assets\btnInstructions_ovr.png" />
     <Content Include="Assets\btnNextRound.jpg" />
     <Content Include="Assets\btnNextRoundovr.jpg" />
+    <Content Include="Assets\btnRestart.png" />
+    <Content Include="Assets\btnRestart_ovr.png" />
     <Content Include="Assets\btnSameGame.jpg" />
     <Content Include="Assets\btnSameGameovr.jpg" />
     <Content Include="Assets\btnStart.jpg" />
@@ -221,6 +226,8 @@
     <Content Include="Assets\Cards\back1.png" />
     <Content Include="Assets\Cards\joker.png" />
     <Content Include="Assets\console.jpg" />
+    <Content Include="Assets\consoleBottom.png" />
+    <Content Include="Assets\consoleTop.png" />
     <Content Include="Assets\counter.jpg" />
     <Content Include="Assets\Logo.png" />
     <Content Include="Assets\msg1.png" />

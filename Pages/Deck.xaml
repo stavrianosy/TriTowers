@@ -79,9 +79,17 @@
         </Button>
         <Button x:Name="btnInstructions" IsEnabled="true" Tapped="btnInstructions_Tapped" BorderBrush="Red" Foreground="Red" Canvas.Left="703" Canvas.Top="467">
             <TextBlock Text="Instructions"  ></TextBlock>
-        </Button>
-        <TextBlock x:Name="txtStage" Canvas.Left="299" TextWrapping="Wrap" Text="aaa" Canvas.Top="35" Height="46" Width="70" Foreground="Red" FontSize="24"/>
+        </Button>        
         <Canvas x:Name="cnvTop"  Canvas.Top="0" Canvas.Left="-80">
+            <Image Source="/Assets/consoleTop.png" Canvas.Left="191" />
+            <TextBlock x:Name="txtStage" Canvas.Left="279" TextWrapping="Wrap" Text="1" Canvas.Top="12" TextAlignment="Right" Height="24" Width="35" Foreground="Black" FontSize="24" RenderTransformOrigin="0.5,0.5"/>
+            <Button Tapped="btnInstructions_Tapped" Canvas.Left="621" Canvas.Top="7" BorderThickness="0" VerticalAlignment="Center" Margin="0" Padding="0" UseLayoutRounding="True" >
+                <Image Source="/Assets/btnInstructions.png" Stretch="None"/>
+            </Button>
+            <Image Source="/Assets/btnHiScores.png" Canvas.Left="726" Canvas.Top="10" />
+            <Button Tapped="btnInstructions_Tapped" Canvas.Left="799" Canvas.Top="7" BorderThickness="0" VerticalAlignment="Center" Margin="0" Padding="0" UseLayoutRounding="True" >
+                <Image Source="/Assets/btnRestart.png" Stretch="None"/>
+            </Button>
             <Image Source="/Assets/counter.jpg" Canvas.Left="529" ></Image>
             <TextBlock x:Name="txtTimer" 
                        Canvas.Left="529" 
@@ -94,7 +102,7 @@
                        FontSize="26" TextAlignment="Center"/>
         </Canvas>
         <Canvas x:Name="cnvBottom" Canvas.Left="200" Canvas.Top="550">
-            <Image Source="/Assets/console.jpg" Canvas.Left="-64"></Image>
+            <Image Source="/Assets/consoleBottom.png" Canvas.Left="-64" Canvas.Top="-2"></Image>
             <Image Source="/Assets/separator.jpg" Canvas.Left="241" Canvas.Top="51"></Image>
             <Image Source="/Assets/separator.jpg" Canvas.Left="314" Canvas.Top="51"></Image>
             <TextBlock x:Name="txtCardsLeft" 
@@ -127,13 +135,21 @@
                        Foreground="#FF222222" 
                        FontSize="24"/>
             <TextBlock x:Name="txtHiScore" 
-                       Canvas.Left="-52" 
-                       Canvas.Top="22"
+                       Canvas.Left="-20" 
+                       Canvas.Top="32"
                        Text="0" 
                        TextAlignment="Right"                       
-                       Width="110" 
+                       Width="76" 
                        Foreground="#FF222222" 
-                       FontSize="16"/>
+                       FontSize="12"/>
+            <TextBlock x:Name="txtHiScoreDate" 
+                       Canvas.Left="-20" 
+                       Canvas.Top="53"
+                       Text="0" 
+                       TextAlignment="Right"                       
+                       Width="76" 
+                       Foreground="#FF222222" 
+                       FontSize="12"/>
             <TextBlock x:Name="txtChances" 
             	Text="{Binding Items.Chances}" 
             	FontSize="24" 

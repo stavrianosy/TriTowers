@@ -13,6 +13,7 @@ namespace TriTowers.DataModel
         public string PlayerName { get; set; }
         public int Score { get; set; }
         public int Stage { get; set; }
+        public DateTime Date { get; set; }
 
     }
 }
