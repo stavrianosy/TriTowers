@@ -112,6 +112,12 @@
     <Compile Include="Controls\Flyouts\Bonus.xaml.cs">
       <DependentUpon>Bonus.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\Flyouts\RestartGame.xaml.cs">
+      <DependentUpon>RestartGame.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Flyouts\LostBonus.xaml.cs">
+      <DependentUpon>LostBonus.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Controls\Flyouts\FinishedGameHiScore.xaml.cs">
       <DependentUpon>FinishedGameHiScore.xaml</DependentUpon>
     </Compile>
@@ -160,8 +166,13 @@
     <None Include="TriTowers_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\btnCancel.png" />
+    <Content Include="Assets\btnContinue.png" />
+    <Content Include="Assets\btnExit_home.png" />
+    <Content Include="Assets\btnGoToBonus.png" />
     <Content Include="Assets\btnHiScores.png" />
     <Content Include="Assets\btnInstructions.png" />
+    <Content Include="Assets\btnInstructions_home.png" />
     <Content Include="Assets\btnInstructions_ovr.png" />
     <Content Include="Assets\btnNextRound.jpg" />
     <Content Include="Assets\btnNextRoundovr.jpg" />
@@ -170,6 +181,7 @@
     <Content Include="Assets\btnSameGame.jpg" />
     <Content Include="Assets\btnSameGameovr.jpg" />
     <Content Include="Assets\btnStart.jpg" />
+    <Content Include="Assets\btnStartGame_home.png" />
     <Content Include="Assets\btnStartovr.jpg" />
     <Content Include="Assets\Cards\10c.png" />
     <Content Include="Assets\Cards\10d.png" />
@@ -228,7 +240,8 @@
     <Content Include="Assets\console.jpg" />
     <Content Include="Assets\consoleBottom.png" />
     <Content Include="Assets\consoleTop.png" />
-    <Content Include="Assets\counter.jpg" />
+    <Content Include="Assets\counter.png" />
+    <Content Include="Assets\coverCircle.png" />
     <Content Include="Assets\Logo.png" />
     <Content Include="Assets\msg1.png" />
     <Content Include="Assets\msg2.png" />
@@ -249,7 +262,20 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Common\TriTowersStyles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Page>
     <Page Include="Controls\Flyouts\Bonus.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Flyouts\RestartGame.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Flyouts\LostBonus.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

@@ -1,0 +1,14 @@
+﻿<common:LayoutAwarePage
+    x:Class="TriTowers.Pages.Instructions"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TriTowers.Pages"
+    xmlns:common="using:TriTowers.Common"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Canvas Background="#FF006600" >
+        <TextBlock Text="Instructions" FontSize="50" Canvas.Left="584" Canvas.Top="294"></TextBlock>
+    </Canvas>
+</common:LayoutAwarePage>

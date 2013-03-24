@@ -12,8 +12,8 @@
     <Canvas>
         
         <Image Source="/Assets/msg1.png"></Image>
-        <Image x:Name="btnStart" Source="/Assets/btnStart.jpg" Tapped="btnContinue_Tapped" Canvas.Left="143" Canvas.Top="70"></Image>
-        <TextBlock Text="Lost a chance." FontSize="22" TextAlignment="Center" TextWrapping="Wrap" Canvas.Top="10" Height="25" Width="360"/>
-        <TextBlock Text="Click START to continue"  TextAlignment="Center" FontSize="22" TextWrapping="Wrap" Canvas.Top="38" Height="30" Width="360"/>
+        <Image x:Name="btnStart" Source="/Assets/btnStart.jpg" Tapped="btnContinue_Tapped" Canvas.Left="143" Canvas.Top="110"></Image>
+        <TextBlock Text="Lost a chance." Style="{StaticResource Messge}" Canvas.Top="20" Canvas.Left="140" />
+        <TextBlock Text="Click START to continue"  Style="{StaticResource Messge}" Canvas.Top="53" Height="30" Canvas.Left="113"/>
     </Canvas>
 </UserControl>

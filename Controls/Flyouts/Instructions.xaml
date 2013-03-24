@@ -11,10 +11,10 @@
     
     <Canvas>
         <Image Source="/Assets/msg4.jpg"></Image>
-        <Image x:Name="btnCancel" Source="/Assets/btnStart.jpg" Tapped="btnCancel_Tapped" Canvas.Left="90" Canvas.Top="175"></Image>
-        <Image x:Name="btnContinue" Source="/Assets/btnStart.jpg" Tapped="btnContinue_Tapped" Canvas.Left="185" Canvas.Top="175"/>
-        <TextBlock Text="Your game wil be interrupted." FontSize="22" TextAlignment="Center" TextWrapping="Wrap" Canvas.Top="17" Height="26" Width="355"/>
-        <TextBlock Text="Are you sure you want to continue?" FontSize="20" TextAlignment="Center" TextWrapping="Wrap" Canvas.Top="50" Height="25" Width="355"/>
-        <TextBlock Text="Press CONTINUE to leave the came, or CANCEL to go back to your game session." FontSize="20" TextAlignment="Center" TextWrapping="Wrap" Canvas.Top="80" Height="74" Width="355"/>
+        <Image x:Name="btnCancel" Source="/Assets/btnCancel.png" Tapped="btnCancel_Tapped" Canvas.Left="60" Canvas.Top="221"></Image>
+        <Image x:Name="btnContinue" Source="/Assets/btnContinue.png" Tapped="btnContinue_Tapped" Canvas.Left="195" Canvas.Top="221"/>
+        <TextBlock Text="Your game wil be interrupted." FontSize="22" TextAlignment="Center" TextWrapping="Wrap" Canvas.Top="27" Height="26" Width="355"/>
+        <TextBlock Text="Are you sure you want to continue?" FontSize="20" TextAlignment="Center" TextWrapping="Wrap" Canvas.Top="60" Height="25" Width="355"/>
+        <TextBlock Text="Press CONTINUE to leave the came, or CANCEL to go back to your game session." FontSize="20" TextAlignment="Center" TextWrapping="Wrap" Canvas.Top="100" Height="74" Width="355"/>
     </Canvas>
 </UserControl>

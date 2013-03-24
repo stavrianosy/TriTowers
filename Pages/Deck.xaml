@@ -9,90 +9,31 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-
-    <Canvas x:Name="cnvMain" Background="#FF006600">        
-
-        <Canvas x:Name="cnvFirst" Canvas.Left="10">
-            <Image Source="/Assets/Cards/back1.png" Canvas.Left="132" Canvas.Top="109" Tapped="cardTower1_Tapped"></Image>
-            <Image Source="/Assets/Cards/back1.png" Canvas.Left="103" Canvas.Top="151" Tapped="cardTower1_Tapped" ></Image>
-            <Image Source="/Assets/Cards/back1.png" Canvas.Left="161" Canvas.Top="151" Tapped="cardTower1_Tapped"></Image>
-            <Image Source="/Assets/Cards/back1.png" Canvas.Left="74" Canvas.Top="190" Tapped="cardTower1_Tapped"></Image>
-            <Image Source="/Assets/Cards/back1.png" Canvas.Left="132" Canvas.Top="190" Tapped="cardTower1_Tapped"></Image>
-            <Image Source="/Assets/Cards/back1.png" Canvas.Left="190" Canvas.Top="190" Tapped="cardTower1_Tapped"></Image>
-            <Image Source="/Assets/Cards/back1.png" Canvas.Left="45" Canvas.Top="226" Tapped="cardTower1_Tapped"></Image>
-            <Image Source="/Assets/Cards/back1.png" Canvas.Left="103" Canvas.Top="226" Tapped="cardTower1_Tapped"></Image>
-            <Image Source="/Assets/Cards/back1.png" Canvas.Left="161" Canvas.Top="226" Tapped="cardTower1_Tapped"></Image>
-            <Image Source="/Assets/Cards/back1.png" Canvas.Left="219" Canvas.Top="226" Tapped="cardTower1_Tapped"></Image>
-            <Image Source="/Assets/Cards/back1.png" Canvas.Top="260" Tapped="cardTower1_Tapped" Canvas.Left="16"></Image>
-            <Image Source="/Assets/Cards/back1.png" Canvas.Left="74" Canvas.Top="260" Tapped="cardTower1_Tapped"></Image>
-            <Image Source="/Assets/Cards/back1.png" Canvas.Left="132" Canvas.Top="260" Tapped="cardTower1_Tapped"></Image>
-            <Image Source="/Assets/Cards/back1.png" Canvas.Left="190" Canvas.Top="260" Tapped="cardTower1_Tapped"></Image>
-            <Image Source="/Assets/Cards/back1.png" Canvas.Left="248" Canvas.Top="260" Tapped="cardTower1_Tapped"></Image>
-        </Canvas>
-        <Canvas x:Name="cnvSecond" Canvas.Left="430">
-            <Image Source="/Assets/Cards/back1.png" Canvas.Left="24" Canvas.Top="109" Tapped="cardTower2_Tapped"></Image>
-            <Image Source="/Assets/Cards/back1.png" Canvas.Left="-5" Canvas.Top="151" Tapped="cardTower2_Tapped"></Image>
-            <Image Source="/Assets/Cards/back1.png" Canvas.Left="53" Canvas.Top="151" Tapped="cardTower2_Tapped"></Image>
-            <Image Source="/Assets/Cards/back1.png" Canvas.Left="-34" Canvas.Top="190" Tapped="cardTower2_Tapped"></Image>
-            <Image Source="/Assets/Cards/back1.png" Canvas.Left="24" Canvas.Top="190" Tapped="cardTower2_Tapped"></Image>
-            <Image Source="/Assets/Cards/back1.png" Canvas.Left="82" Canvas.Top="190" Tapped="cardTower2_Tapped"></Image>
-            <Image Source="/Assets/Cards/back1.png" Canvas.Left="-63" Canvas.Top="226" Tapped="cardTower2_Tapped"></Image>
-            <Image Source="/Assets/Cards/back1.png" Canvas.Left="-5" Canvas.Top="226" Tapped="cardTower2_Tapped"></Image>
-            <Image Source="/Assets/Cards/back1.png" Canvas.Left="53" Canvas.Top="226" Tapped="cardTower2_Tapped"></Image>
-            <Image Source="/Assets/Cards/back1.png" Canvas.Left="111" Canvas.Top="226" Tapped="cardTower2_Tapped"></Image>
-            <Image Source="/Assets/Cards/back1.png" Canvas.Top="260" Tapped="cardTower2_Tapped" Canvas.Left="-92"></Image>
-            <Image Source="/Assets/Cards/back1.png" Canvas.Left="-34" Canvas.Top="260" Tapped="cardTower2_Tapped"></Image>
-            <Image Source="/Assets/Cards/back1.png" Canvas.Left="24" Canvas.Top="260" Tapped="cardTower2_Tapped"></Image>
-            <Image Source="/Assets/Cards/back1.png" Canvas.Left="82" Canvas.Top="260" Tapped="cardTower2_Tapped"></Image>
-            <Image Source="/Assets/Cards/back1.png" Canvas.Left="140" Canvas.Top="260" Tapped="cardTower2_Tapped"></Image>
-        </Canvas>
-        <Canvas x:Name="cnvThird" Canvas.Left="860">
-            <Image Source="/Assets/Cards/back1.png" Canvas.Left="-94" Canvas.Top="110" Tapped="cardTower3_Tapped"></Image>
-            <Image Source="/Assets/Cards/back1.png" Canvas.Top="151" Tapped="cardTower3_Tapped" Canvas.Left="-123"></Image>
-            <Image Source="/Assets/Cards/back1.png" Canvas.Top="151" Tapped="cardTower3_Tapped" Canvas.Left="-65"></Image>
-            <Image Source="/Assets/Cards/back1.png" Canvas.Left="-152" Canvas.Top="190" Tapped="cardTower3_Tapped"></Image>
-            <Image Source="/Assets/Cards/back1.png" Canvas.Left="-94" Canvas.Top="190" Tapped="cardTower3_Tapped"></Image>
-            <Image Source="/Assets/Cards/back1.png" Canvas.Left="-36" Canvas.Top="190" Tapped="cardTower3_Tapped"></Image>
-            <Image Source="/Assets/Cards/back1.png" Canvas.Top="226" Tapped="cardTower3_Tapped" Canvas.Left="-182"></Image>
-            <Image Source="/Assets/Cards/back1.png" Canvas.Top="226" Tapped="cardTower3_Tapped" Canvas.Left="-124"></Image>
-            <Image Source="/Assets/Cards/back1.png" Canvas.Top="226" Tapped="cardTower3_Tapped" Canvas.Left="-65"></Image>
-            <Image Source="/Assets/Cards/back1.png" Canvas.Top="226" Tapped="cardTower3_Tapped" Canvas.Left="-7"></Image>
-            <Image Source="/Assets/Cards/back1.png" Canvas.Top="260" Tapped="cardTower3_Tapped" Canvas.Left="-211"></Image>
-            <Image Source="/Assets/Cards/back1.png" Canvas.Top="260" Tapped="cardTower3_Tapped" Canvas.Left="-153"></Image>
-            <Image Source="/Assets/Cards/back1.png" Canvas.Top="260" Tapped="cardTower3_Tapped" Canvas.Left="-94"></Image>
-            <Image Source="/Assets/Cards/back1.png" Canvas.Top="260" Tapped="cardTower3_Tapped" Canvas.Left="-36"></Image>
-            <Image Source="/Assets/Cards/back1.png" Canvas.Top="260" Tapped="cardTower3_Tapped" Canvas.Left="22"></Image>
-        </Canvas>
-        <Canvas x:Name="cnvDeck" Canvas.Left="535" Canvas.Top="515">
-            <Image Source="/Assets/Cards/back1.png" Tapped="cardDeck_Tapped" Canvas.Top="-120" Canvas.Left="-94"></Image>
-            <Image Source="/Assets/Cards/back1.png" Tapped="cardDeck_Tapped" Canvas.Top="-120" Canvas.Left="-94" ></Image>
-            <Image Source="/Assets/Cards/back1.png" Tapped="cardDeck_Tapped" Canvas.Top="-120" Canvas.Left="-94"></Image>
-            <Image Source="/Assets/Cards/back1.png" Tapped="cardDeck_Tapped" Canvas.Top="-120" Canvas.Left="-94"></Image>
-            <Image Source="/Assets/Cards/back1.png" Tapped="cardDeck_Tapped" Canvas.Top="-120" Canvas.Left="-94"></Image>
-            <Image Source="/Assets/Cards/back1.png" Tapped="cardDeck_Tapped" Canvas.Top="-120" Canvas.Left="-94"></Image>
-            <Image Source="/Assets/Cards/back1.png" Tapped="cardDeck_Tapped" Canvas.Top="-120" Canvas.Left="-94"></Image>
-            <Image Source="/Assets/Cards/back1.png" Tapped="cardDeck_Tapped" Canvas.Top="-120" Canvas.Left="-94"></Image>
-        </Canvas>
-        <Image x:Name="rectCardOnHand" Source="/Assets/Cards/back1.png" Canvas.Left="506" Canvas.Top="395"></Image>
-        <Button BorderBrush="Red" Foreground="Red" Tapped="btnStart_Tapped" Canvas.Left="614" Canvas.Top="467">
-            <TextBlock Text="Start"></TextBlock>
-        </Button>
-        <Button x:Name="btnInstructions" IsEnabled="true" Tapped="btnInstructions_Tapped" BorderBrush="Red" Foreground="Red" Canvas.Left="703" Canvas.Top="467">
-            <TextBlock Text="Instructions"  ></TextBlock>
-        </Button>        
-        <Canvas x:Name="cnvTop"  Canvas.Top="0" Canvas.Left="-80">
-            <Image Source="/Assets/consoleTop.png" Canvas.Left="191" />
-            <TextBlock x:Name="txtStage" Canvas.Left="279" TextWrapping="Wrap" Text="1" Canvas.Top="12" TextAlignment="Right" Height="24" Width="35" Foreground="Black" FontSize="24" RenderTransformOrigin="0.5,0.5"/>
-            <Button Tapped="btnInstructions_Tapped" Canvas.Left="621" Canvas.Top="7" BorderThickness="0" VerticalAlignment="Center" Margin="0" Padding="0" UseLayoutRounding="True" >
-                <Image Source="/Assets/btnInstructions.png" Stretch="None"/>
-            </Button>
-            <Image Source="/Assets/btnHiScores.png" Canvas.Left="726" Canvas.Top="10" />
-            <Button Tapped="btnInstructions_Tapped" Canvas.Left="799" Canvas.Top="7" BorderThickness="0" VerticalAlignment="Center" Margin="0" Padding="0" UseLayoutRounding="True" >
-                <Image Source="/Assets/btnRestart.png" Stretch="None"/>
-            </Button>
-            <Image Source="/Assets/counter.jpg" Canvas.Left="529" ></Image>
-            <TextBlock x:Name="txtTimer" 
-                       Canvas.Left="529" 
+    <Grid Background="#FF006600" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.3*"></ColumnDefinition>
+                <ColumnDefinition Width="740"></ColumnDefinition>
+                <ColumnDefinition Width="0.3*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+            <RowDefinition x:Name="rowTopBar" Height="95"></RowDefinition>
+            <RowDefinition x:Name="rowCards" Height="260"></RowDefinition>
+            <RowDefinition x:Name="rowDeck" Height="95"></RowDefinition>
+            <RowDefinition x:Name="rowBottomBar" Height="100"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Canvas Grid.Row="0" Grid.Column="1" x:Name="cnvTop">
+                <Image Source="/Assets/consoleTop.png" Canvas.Left="1" />
+                <TextBlock x:Name="txtStage" Canvas.Left="89" TextWrapping="Wrap" Text="1" Canvas.Top="12" TextAlignment="Right" Height="24" Width="35" Foreground="Black" FontSize="24" RenderTransformOrigin="0.5,0.5"/>
+                <Button Tapped="btnInstructions_Tapped" Canvas.Left="431" Canvas.Top="7" BorderThickness="0" VerticalAlignment="Center" Margin="0" Padding="0" UseLayoutRounding="True" >
+                    <Image Source="/Assets/btnInstructions.png" Stretch="None"/>
+                </Button>
+                <Image Source="/Assets/btnHiScores.png" Canvas.Left="536" Canvas.Top="10" />
+                <Button Tapped="btnRestart_Tapped" Canvas.Left="609" Canvas.Top="7" BorderThickness="0" VerticalAlignment="Center" Margin="0" Padding="0" UseLayoutRounding="True" >
+                    <Image Source="/Assets/btnRestart.png" Stretch="None"/>
+                </Button>
+                <Image Source="/Assets/counter.png" Canvas.Left="341" Canvas.Top="4" ></Image>
+                <TextBlock x:Name="txtTimer" 
+                       Canvas.Left="339" 
                        TextWrapping="Wrap" 
                        Text="0" 
                        Canvas.Top="23" 
@@ -100,33 +41,108 @@
                        Width="63" 
                        Foreground="Black" 
                        FontSize="26" TextAlignment="Center"/>
-        </Canvas>
-        <Canvas x:Name="cnvBottom" Canvas.Left="200" Canvas.Top="550">
-            <Image Source="/Assets/consoleBottom.png" Canvas.Left="-64" Canvas.Top="-2"></Image>
-            <Image Source="/Assets/separator.jpg" Canvas.Left="241" Canvas.Top="51"></Image>
-            <Image Source="/Assets/separator.jpg" Canvas.Left="314" Canvas.Top="51"></Image>
+            </Canvas>
+        <Grid Grid.Row="1" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition x:Name="colTower1" Width="*"></ColumnDefinition>
+                <ColumnDefinition x:Name="colTower2" Width="*"></ColumnDefinition>
+                <ColumnDefinition x:Name="colTower3" Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition  x:Name="rowTowersTop" Height="200"></RowDefinition>
+                <RowDefinition x:Name="rowTowersBottom"></RowDefinition>
+            </Grid.RowDefinitions>
+        <Canvas x:Name="cnvFirst" >
+                <Image Source="/Assets/Cards/back1.png" Canvas.Left="48" Canvas.Top="-1" Tapped="cardTower1_Tapped"></Image>
+                <Image Source="/Assets/Cards/back1.png" Canvas.Left="19" Canvas.Top="41" Tapped="cardTower1_Tapped" ></Image>
+                <Image Source="/Assets/Cards/back1.png" Canvas.Left="77" Canvas.Top="41" Tapped="cardTower1_Tapped"></Image>
+                <Image Source="/Assets/Cards/back1.png" Canvas.Left="-10" Canvas.Top="80" Tapped="cardTower1_Tapped"></Image>
+                <Image Source="/Assets/Cards/back1.png" Canvas.Left="48" Canvas.Top="80" Tapped="cardTower1_Tapped"></Image>
+                <Image Source="/Assets/Cards/back1.png" Canvas.Left="106" Canvas.Top="80" Tapped="cardTower1_Tapped"></Image>
+                <Image Source="/Assets/Cards/back1.png" Canvas.Left="-39" Canvas.Top="116" Tapped="cardTower1_Tapped"></Image>
+                <Image Source="/Assets/Cards/back1.png" Canvas.Left="19" Canvas.Top="116" Tapped="cardTower1_Tapped"></Image>
+                <Image Source="/Assets/Cards/back1.png" Canvas.Left="77" Canvas.Top="116" Tapped="cardTower1_Tapped"></Image>
+                <Image Source="/Assets/Cards/back1.png" Canvas.Left="135" Canvas.Top="116" Tapped="cardTower1_Tapped"></Image>
+                <Image Source="/Assets/Cards/back1.png" Canvas.Left="-68" Canvas.Top="150" Tapped="cardTower1_Tapped" ></Image>
+                <Image Source="/Assets/Cards/back1.png" Canvas.Left="-10" Canvas.Top="150" Tapped="cardTower1_Tapped"></Image>
+                <Image Source="/Assets/Cards/back1.png" Canvas.Left="48" Canvas.Top="150" Tapped="cardTower1_Tapped"></Image>
+                <Image Source="/Assets/Cards/back1.png" Canvas.Left="106" Canvas.Top="150" Tapped="cardTower1_Tapped"></Image>
+                <Image Source="/Assets/Cards/back1.png" Canvas.Left="164" Canvas.Top="150" Tapped="cardTower1_Tapped"></Image>
+            </Canvas>
+            <Canvas x:Name="cnvSecond" Grid.Column="1">
+                <Image Source="/Assets/Cards/back1.png" Canvas.Left="98" Canvas.Top="-1" Tapped="cardTower2_Tapped"></Image>
+                <Image Source="/Assets/Cards/back1.png" Canvas.Left="69" Canvas.Top="41" Tapped="cardTower2_Tapped"></Image>
+                <Image Source="/Assets/Cards/back1.png" Canvas.Left="127" Canvas.Top="41" Tapped="cardTower2_Tapped"></Image>
+                <Image Source="/Assets/Cards/back1.png" Canvas.Left="40" Canvas.Top="80" Tapped="cardTower2_Tapped"></Image>
+                <Image Source="/Assets/Cards/back1.png" Canvas.Left="98" Canvas.Top="80" Tapped="cardTower2_Tapped"></Image>
+                <Image Source="/Assets/Cards/back1.png" Canvas.Left="156" Canvas.Top="80" Tapped="cardTower2_Tapped"></Image>
+                <Image Source="/Assets/Cards/back1.png" Canvas.Left="11" Canvas.Top="116" Tapped="cardTower2_Tapped"></Image>
+                <Image Source="/Assets/Cards/back1.png" Canvas.Left="69" Canvas.Top="116" Tapped="cardTower2_Tapped"></Image>
+                <Image Source="/Assets/Cards/back1.png" Canvas.Left="127" Canvas.Top="116" Tapped="cardTower2_Tapped"></Image>
+                <Image Source="/Assets/Cards/back1.png" Canvas.Left="185" Canvas.Top="116" Tapped="cardTower2_Tapped"></Image>
+                <Image Source="/Assets/Cards/back1.png" Canvas.Left="-18" Canvas.Top="150" Tapped="cardTower2_Tapped"></Image>
+                <Image Source="/Assets/Cards/back1.png" Canvas.Left="40" Canvas.Top="150" Tapped="cardTower2_Tapped"></Image>
+                <Image Source="/Assets/Cards/back1.png" Canvas.Left="98" Canvas.Top="150" Tapped="cardTower2_Tapped"></Image>
+                <Image Source="/Assets/Cards/back1.png" Canvas.Left="156" Canvas.Top="150" Tapped="cardTower2_Tapped"></Image>
+                <Image Source="/Assets/Cards/back1.png" Canvas.Left="214" Canvas.Top="150" Tapped="cardTower2_Tapped"></Image>
+            </Canvas>
+            <Canvas x:Name="cnvThird" Grid.Column="2">
+                <Image Source="/Assets/Cards/back1.png" Canvas.Left="150" Tapped="cardTower3_Tapped"/>
+                <Image Source="/Assets/Cards/back1.png" Canvas.Left="121" Canvas.Top="41" Tapped="cardTower3_Tapped"></Image>
+                <Image Source="/Assets/Cards/back1.png" Canvas.Left="179" Canvas.Top="41" Tapped="cardTower3_Tapped"></Image>
+                <Image Source="/Assets/Cards/back1.png" Canvas.Left="92" Canvas.Top="80" Tapped="cardTower3_Tapped"></Image>
+                <Image Source="/Assets/Cards/back1.png" Canvas.Left="150" Canvas.Top="80" Tapped="cardTower3_Tapped"></Image>
+                <Image Source="/Assets/Cards/back1.png" Canvas.Left="208" Canvas.Top="80" Tapped="cardTower3_Tapped"></Image>
+                <Image Source="/Assets/Cards/back1.png" Canvas.Left="62" Canvas.Top="116" Tapped="cardTower3_Tapped"></Image>
+                <Image Source="/Assets/Cards/back1.png" Canvas.Left="120" Canvas.Top="116" Tapped="cardTower3_Tapped"></Image>
+                <Image Source="/Assets/Cards/back1.png" Canvas.Left="179" Canvas.Top="116" Tapped="cardTower3_Tapped"></Image>
+                <Image Source="/Assets/Cards/back1.png" Canvas.Left="237" Canvas.Top="116" Tapped="cardTower3_Tapped"></Image>
+                <Image Source="/Assets/Cards/back1.png" Canvas.Left="33" Canvas.Top="150" Tapped="cardTower3_Tapped"></Image>
+                <Image Source="/Assets/Cards/back1.png" Canvas.Left="91" Canvas.Top="150" Tapped="cardTower3_Tapped"></Image>
+                <Image Source="/Assets/Cards/back1.png" Canvas.Left="150" Canvas.Top="150" Tapped="cardTower3_Tapped" ></Image>
+                <Image Source="/Assets/Cards/back1.png" Canvas.Left="208" Canvas.Top="150" Tapped="cardTower3_Tapped" ></Image>
+                <Image Source="/Assets/Cards/back1.png" Canvas.Left="266" Canvas.Top="150" Tapped="cardTower3_Tapped" ></Image>
+            </Canvas>
+        </Grid>
+        <Canvas x:Name="cnvDeck" Grid.Column="1" Grid.Row="2" >
+                <Image Source="/Assets/Cards/back1.png" Tapped="cardDeck_Tapped"  Canvas.Left="330" ></Image>
+                <Image Source="/Assets/Cards/back1.png" Tapped="cardDeck_Tapped"  Canvas.Left="330"></Image>
+                <Image Source="/Assets/Cards/back1.png" Tapped="cardDeck_Tapped"  Canvas.Left="330"></Image>
+                <Image Source="/Assets/Cards/back1.png" Tapped="cardDeck_Tapped"  Canvas.Left="330"></Image>
+                <Image Source="/Assets/Cards/back1.png" Tapped="cardDeck_Tapped"  Canvas.Left="330"></Image>
+                <Image Source="/Assets/Cards/back1.png" Tapped="cardDeck_Tapped"  Canvas.Left="330"></Image>
+                <Image Source="/Assets/Cards/back1.png" Tapped="cardDeck_Tapped"  Canvas.Left="330"></Image>
+                <Image Source="/Assets/Cards/back1.png" Tapped="cardDeck_Tapped"  Canvas.Left="330"></Image>
+            </Canvas>
+            <Canvas Grid.Column="1" Grid.Row="2" >
+                <Image x:Name="rectCardOnHand" Source="/Assets/Cards/back1.png" Canvas.Left="392"></Image>
+            </Canvas>
+        <Canvas Grid.Row="3" Grid.Column="1" x:Name="cnvBottom" Canvas.Left="200" Canvas.Top="550">
+            <Image Source="/Assets/consoleBottom.png" Canvas.Left="-4" Canvas.Top="-2"></Image>
+            <Image Source="/Assets/separator.jpg" Canvas.Left="301" Canvas.Top="51"></Image>
+            <Image Source="/Assets/separator.jpg" Canvas.Left="374" Canvas.Top="51"></Image>
             <TextBlock x:Name="txtCardsLeft" 
                        Text="0" 
                        FontSize="24" 
                        TextAlignment="Right" 
                        Canvas.Top="7" 
-                       Canvas.Left="296" 
+                       Canvas.Left="356" 
                        Foreground="#FF222222" 
                        Width="25"/>
             <TextBlock x:Name="txtBonus"
                        Text="Next Round" 
                        FontSize="14" 
                        Canvas.Top="54" 
-                       Canvas.Left="156" 
+                       Canvas.Left="216" 
                        Foreground="#FFA5A5A5" />
             <TextBlock x:Name="txtFreeze"
                        Text="Freeze" 
                        FontSize="16" 
                        Canvas.Top="54" 
-                       Canvas.Left="256" 
+                       Canvas.Left="316" 
                        Foreground="#FFA5A5A5" />
             <TextBlock x:Name="txtPoints" 
-                       Canvas.Left="552" 
+                       Canvas.Left="612" 
                        Canvas.Top="7"
                        Text="0" 
                        TextAlignment="Right" 
@@ -135,36 +151,78 @@
                        Foreground="#FF222222" 
                        FontSize="24"/>
             <TextBlock x:Name="txtHiScore" 
-                       Canvas.Left="-20" 
                        Canvas.Top="32"
                        Text="0" 
                        TextAlignment="Right"                       
                        Width="76" 
                        Foreground="#FF222222" 
-                       FontSize="12"/>
+                       FontSize="12" Canvas.Left="40"/>
             <TextBlock x:Name="txtHiScoreDate" 
-                       Canvas.Left="-20" 
                        Canvas.Top="53"
                        Text="0" 
                        TextAlignment="Right"                       
                        Width="76" 
                        Foreground="#FF222222" 
-                       FontSize="12"/>
+                       FontSize="12" Canvas.Left="40"/>
             <TextBlock x:Name="txtChances" 
             	Text="{Binding Items.Chances}" 
             	FontSize="24" 
             	TextAlignment="Right" 
             	Canvas.Top="47" 
-            	Canvas.Left="636" 
+            	Canvas.Left="696" 
             	Foreground="#FF222222" 
             	Width="25"/>
         </Canvas>
-        <flyouts:Bonus x:Name="flyBonus" Height="330" Width="300"/>
-        <flyouts:NextRound x:Name="flyNextRound" Height="330" Width="300"/>
-        <flyouts:StartGame x:Name="flyStartGame" Height="330" Width="300"/>
-        <flyouts:LostGame x:Name="flyLostGame" Height="330" Width="300"/>
-        <flyouts:FinishedGame x:Name="flyFinishedGame" Height="330" Width="300"/>
-        <flyouts:FinishedGameHiScore x:Name="flyFinishedGameWithHiScore" Height="330" Width="300"/>
-        <flyouts:Instructions x:Name="flyInstructions" Height="210" Width="355"/>
-    </Canvas>
+        <Canvas>
+            <flyouts:Bonus x:Name="flyBonus" Height="260" Width="300"/>
+            <flyouts:NextRound x:Name="flyNextRound" Height="260" Width="300"/>
+            <flyouts:StartGame x:Name="flyStartGame" Height="260" Width="300"/>
+            <flyouts:RestartGame x:Name="flyRestartGame" Height="260" Width="300"/>
+            <flyouts:LostBonus x:Name="flyLostBonus" Height="260" Width="300"/>
+            <flyouts:LostGame x:Name="flyLostGame" Height="260" Width="300"/>
+            <flyouts:FinishedGame x:Name="flyFinishedGame" Height="260" Width="300"/>
+            <flyouts:FinishedGameHiScore x:Name="flyFinishedGameWithHiScore" Height="260" Width="300"/>
+            <flyouts:Instructions x:Name="flyInstructions" Height="210" Width="355"/>
+        </Canvas>
+        <VisualStateManager.VisualStateGroups>
+            <!-- Visual states reflect the application's view state -->
+            <VisualStateGroup x:Name="ApplicationViewStates">
+                <VisualState x:Name="FullScreenLandscape"/>
+                <VisualState x:Name="Filled"/>
+
+                <!-- The entire page respects the narrower 100-pixel margin convention for portrait -->
+                <VisualState x:Name="FullScreenPortrait">
+                    <Storyboard>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="rowCards" Storyboard.TargetProperty="Height">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="490"/>
+                        </ObjectAnimationUsingKeyFrames>
+
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="colTower2" Storyboard.TargetProperty="Width">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="0"/>
+                        </ObjectAnimationUsingKeyFrames>
+
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="cnvFirst" Storyboard.TargetProperty="Margin">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="130 0 0 0"/>
+                        </ObjectAnimationUsingKeyFrames>
+
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="cnvSecond" Storyboard.TargetProperty="(Grid.Column)">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="0"/>
+                        </ObjectAnimationUsingKeyFrames>
+
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="cnvSecond" Storyboard.TargetProperty="(Grid.RowSpan)">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="3"/>
+                        </ObjectAnimationUsingKeyFrames>
+
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="cnvSecond" Storyboard.TargetProperty="(Grid.Row)">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="1"/>
+                        </ObjectAnimationUsingKeyFrames>
+
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="cnvSecond" Storyboard.TargetProperty="Margin">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="250 40 0 0"/>
+                        </ObjectAnimationUsingKeyFrames>
+                    </Storyboard>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>        
+    </Grid>        
 </common:LayoutAwarePage>

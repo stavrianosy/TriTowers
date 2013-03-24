@@ -7,14 +7,55 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Canvas Background="#FF006600" >        
-        <Image Source="/Assets/msg4.jpg" Margin="696,157,279,391"></Image>
-        <Image Source="/Assets/msg4.jpg" Margin="296,157,679,391"></Image>
-        <Border Canvas.Top="162" Canvas.Left="296" Width="351"  Tapped="btnGo" Height="204">
-            <TextBlock Text="PLAY" FontSize="35" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#FF363636" FontWeight="Bold"/>
-        </Border>
-        <Border Canvas.Top="157" Canvas.Left="700" Width="348" Tapped="btnInstructions" Height="209">
-            <TextBlock Text="INSTRUCTIONS" FontSize="35" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#FF363636" FontWeight="Bold"/>
-        </Border>
-    </Canvas>
+    <Grid Background="#FF006600" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.2*"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="0.2*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Canvas Grid.Column="1" >
+            <Image x:Name="imgCircle" Source="/Assets/coverCircle.png" Canvas.Left="18" Canvas.Top="93" Height="522" Width="536"></Image>
+            <Border x:Name="btnStartGame" Canvas.Top="323" Canvas.Left="585" Tapped="btnGo" >
+                <Image Source="/Assets/btnStartGame_home.png" Canvas.Left="134" Canvas.Top="166"/>
+            </Border>
+            <Border x:Name="btnInstructions1" Canvas.Top="164" Canvas.Left="548" Tapped="btnInstructions" >
+                <Image Source="/Assets/btnInstructions_home.png" Canvas.Left="134" Canvas.Top="166"/>
+            </Border>
+            <TextBlock x:Name="txtCopyright" Text="Copyright 2012. All rights reserved." FontSize="18" Canvas.Left="50" Canvas.Top="627" FontFamily="Comic Sans MS"></TextBlock>
+        </Canvas>
+    <VisualStateManager.VisualStateGroups>
+        <!-- Visual states reflect the application's view state -->
+        <VisualStateGroup x:Name="ApplicationViewStates">
+            <VisualState x:Name="FullScreenLandscape"/>
+            <VisualState x:Name="Filled"/>
+
+            <!-- The entire page respects the narrower 100-pixel margin convention for portrait -->
+            <VisualState x:Name="FullScreenPortrait">
+                <Storyboard>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="imgCircle" Storyboard.TargetProperty="(Canvas.Left)">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="10"/>
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="txtCopyright" Storyboard.TargetProperty="(Canvas.Top)">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="10"/>
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="btnStartGame" Storyboard.TargetProperty="(Canvas.Left)">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="120"/>
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="btnStartGame" Storyboard.TargetProperty="(Canvas.Top)">
+                        <DiscreteObjectKeyFrame KeyTime="0" Value="700"/>
+                    </ObjectAnimationUsingKeyFrames>
+                    <ObjectAnimationUsingKeyFrames Storyboard.TargetName="btnInstructions1" Storyboard.TargetProperty="(Canvas.Left)">
+                        <DiscreteObjectKeyFrame KeyTime="0" Value="110"/>
+                    </ObjectAnimationUsingKeyFrames>
+                    <ObjectAnimationUsingKeyFrames Storyboard.TargetName="btnInstructions1" Storyboard.TargetProperty="(Canvas.Top)">
+                        <DiscreteObjectKeyFrame KeyTime="0" Value="850"/>
+                    </ObjectAnimationUsingKeyFrames>
+                </Storyboard>
+            </VisualState>
+            <!-- The back button and title have different styles when snapped -->
+            <VisualState x:Name="Snapped">
+            </VisualState>
+        </VisualStateGroup>
+    </VisualStateManager.VisualStateGroups>
+    </Grid>
 </Page>

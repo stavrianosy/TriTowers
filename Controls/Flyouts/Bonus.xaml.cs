@@ -21,6 +21,53 @@ namespace TriTowers.Controls.Flyouts
         public delegate void ContinueDelegate();
         public event ContinueDelegate ContinueEvent;
 
+        public int Stage
+        {
+            get { return (int)GetValue(StageProperty); }
+            set { SetValue(StageProperty, value); }
+        }
+
+        public int TotalScore
+        {
+            get { return (int)GetValue(TotalScoreProperty); }
+            set { SetValue(TotalScoreProperty, value); }
+        }
+
+        public int Level1
+        {
+            get { return (int)GetValue(Level1Property); }
+            set { SetValue(Level1Property, value); }
+        }
+
+        public int Level2
+        {
+            get { return (int)GetValue(Level2Property); }
+            set { SetValue(Level2Property, value); }
+        }
+
+        public int Level3
+        {
+            get { return (int)GetValue(Level3Property); }
+            set { SetValue(Level3Property, value); }
+        }
+
+
+        public static readonly DependencyProperty StageProperty =
+            DependencyProperty.Register("Stage", typeof(int), typeof(Bonus), new PropertyMetadata(null));
+
+        public static readonly DependencyProperty TotalScoreProperty =
+            DependencyProperty.Register("TotalScore", typeof(int), typeof(Bonus), new PropertyMetadata(null));
+
+        public static readonly DependencyProperty Level1Property =
+            DependencyProperty.Register("Level1", typeof(int), typeof(Bonus), new PropertyMetadata(null));
+
+        public static readonly DependencyProperty Level2Property =
+            DependencyProperty.Register("Level2", typeof(int), typeof(Bonus), new PropertyMetadata(null));
+
+        public static readonly DependencyProperty Level3Property =
+            DependencyProperty.Register("Level3", typeof(int), typeof(Bonus), new PropertyMetadata(null));
+
+
         public Bonus()
         {
             this.InitializeComponent();

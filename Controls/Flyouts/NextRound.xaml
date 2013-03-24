@@ -11,7 +11,7 @@
     
     <Canvas>
         <Image Source="/Assets/msg3.png"></Image>
-        <Image x:Name="btnStart" Source="/Assets/btnNextRound.jpg" Tapped="btnContinue_Tapped" Canvas.Left="103" Canvas.Top="70"></Image>
-        <TextBlock Text="Go to next round" FontSize="22" Canvas.Left="98" Canvas.Top="25"></TextBlock>
+        <Image x:Name="btnStart" Source="/Assets/btnNextRound.jpg" Tapped="btnContinue_Tapped" Canvas.Left="103" Canvas.Top="110"></Image>
+        <TextBlock Text="Go to next round" Style="{StaticResource Messge}" Canvas.Left="98" Canvas.Top="35"></TextBlock>
     </Canvas>
 </UserControl>

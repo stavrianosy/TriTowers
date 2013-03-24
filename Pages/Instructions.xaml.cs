@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using TriTowers.Common;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -14,14 +15,14 @@ using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
-namespace TriTowers
+namespace TriTowers.Pages
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class MainPage : Page
-    {
-        public MainPage()
+    public sealed partial class Instructions : LayoutAwarePage
+    {   
+        public Instructions()
         {
             this.InitializeComponent();
         }
@@ -33,22 +34,6 @@ namespace TriTowers
         /// property is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            ContinueLoading();
         }
-
-        private void btnGo(object sender, TappedRoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(Pages.Deck));
-        }
-
-        private void btnInstructions(object sender, TappedRoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(Pages.Instructions));
-        }
-        void ContinueLoading()
-        {
-            App.Instance.GameDataSource.LoadCachedGameItem();
-        }
-
     }
 }

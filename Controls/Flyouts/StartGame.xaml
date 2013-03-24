@@ -6,11 +6,12 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    d:DesignHeight="100"
-    d:DesignWidth="360">
-    
+    d:DesignHeight="150"
+    d:DesignWidth="360">    
     <Canvas>
-        <Image Source="/Assets/msg1.png"></Image>
-        <Image x:Name="btnStart" Source="/Assets/btnStart.jpg" Tapped="btnStart_Tapped" Canvas.Left="143" Canvas.Top="70"></Image>
+        <Image Source="/Assets/msg1.png" Canvas.Left="1"/>
+        <TextBlock Text="Click START..." Style="{StaticResource Messge}" Canvas.Left="133" Canvas.Top="25" Width="184"></TextBlock>
+        <TextBlock Text="when you are ready !" Style="{StaticResource Messge}" Canvas.Left="143" Canvas.Top="50"></TextBlock>
+        <Image x:Name="btnStart" Source="/Assets/btnStart.jpg" Tapped="btnStart_Tapped" Canvas.Left="143" Canvas.Top="110"></Image>
     </Canvas>
 </UserControl>

@@ -49,6 +49,13 @@ namespace TriTowers.ViewModel
         public int ShowCardsFor { get; set; }
         public int HiScore { get; set; }
         public DateTime HiScoreDate { get; set; }
+        public int Level1Points { get; set; }
+        public int Level2Points { get; set; }
+        public int Level3Points { get; set; }
+        public int Level1Count { get; set; }
+        public int Level2Count { get; set; }
+        public int Level3Count { get; set; }
+        public int TotalStagePoints { get; set; }
         
         public InGame()
         {
@@ -56,17 +63,17 @@ namespace TriTowers.ViewModel
             Stage = 1;
             CardsOnHand = 0;
             Chances = 2;
-            InitialTime = 50;
-            ExtratimeOnStage = -30;
+            InitialTime = 30;
+            ExtratimeOnStage = 30;
             Countdown = InitialTime;
             NextRoundCount = 0;
             FreezeCount = 0;
-            FreezeSet = 3;
+            FreezeSet = 2;
             FreezeDuration = 5;
             FreezeForSecs = 0;
             IsFreezed = false;
             HitsInRowCount = 0;
-            NextRoundSet = 12;
+            NextRoundSet = 7;
             FreezeColor = new SolidColorBrush(new Color() { R = 30, G = 35, B = 145, A = 255 });
             NextRoundColor = new SolidColorBrush(new Color() { R = 145, G = 30, B = 30, A = 255 });
             TextDisabledColor = new SolidColorBrush(new Color() { R = 165, G = 165, B = 165, A = 255 });
@@ -78,7 +85,13 @@ namespace TriTowers.ViewModel
             ShowCardsFor = 5;
             HiScore = 0;
             HiScoreDate = DateTime.Now;
+            Level1Points = 500;
+            Level2Points = 200;
+            Level3Points = 100;
+            Level1Count = 0;
+            Level2Count = 0;
+            Level3Count = 0;
+            TotalStagePoints = 0;
         }
     }
-
 }

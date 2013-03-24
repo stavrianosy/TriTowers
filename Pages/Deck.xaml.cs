@@ -54,8 +54,11 @@ namespace TriTowers.Pages
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             flyStartGame.StartGameEvent += flyStartGame_Continue;
+            flyRestartGame.ContinueEvent += flyRestartGame_Continue;
+            flyRestartGame.CancelEvent += flyRestartGame_Cancel;
             flyNextRound.ContinueEvent += flyNextRound_Continue;
             flyBonus.ContinueEvent += flyBonus_Continue;
+            flyLostBonus.ContinueEvent += flyLostBonus_Continue;
             flyLostGame.ContinueEvent += flyLostGame_Continue;
             flyFinishedGame.ContinueEvent += flyFinishedGame_Continue;
             flyFinishedGameWithHiScore.ContinueEvent += flyFinishedGameWithHiScore_Continue;
@@ -63,8 +66,10 @@ namespace TriTowers.Pages
             flyInstructions.CancelEvent += flyInstructions_Cancel;
 
             flyStartGame.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
+            flyRestartGame.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
             flyNextRound.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
             flyBonus.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
+            flyLostBonus.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
             flyLostGame.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
             flyFinishedGame.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
             flyFinishedGameWithHiScore.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
@@ -157,29 +162,48 @@ namespace TriTowers.Pages
                                                      card51, card52, card53, card54};
 
             //## Add a method to mix cards #//
-            List<Card> level1_1 = new List<Card>() { GetRandomCards(ref tempCard) };
-            List<Card> level1_2 = new List<Card>() { GetRandomCards(ref tempCard), GetRandomCards(ref tempCard) };
-            List<Card> level1_3 = new List<Card>() { GetRandomCards(ref tempCard), GetRandomCards(ref tempCard), GetRandomCards(ref tempCard) };
-            List<Card> level1_4 = new List<Card>() { GetRandomCards(ref tempCard), GetRandomCards(ref tempCard), GetRandomCards(ref tempCard), GetRandomCards(ref tempCard) };
-            List<Card> level1_5 = new List<Card>() { GetRandomCards(ref tempCard), GetRandomCards(ref tempCard), GetRandomCards(ref tempCard), GetRandomCards(ref tempCard), GetRandomCards(ref tempCard) };
+            //List<Card> level1_1 = new List<Card>() { GetRandomCards(ref tempCard) };
+            //List<Card> level1_2 = new List<Card>() { GetRandomCards(ref tempCard), GetRandomCards(ref tempCard) };
+            //List<Card> level1_3 = new List<Card>() { GetRandomCards(ref tempCard), GetRandomCards(ref tempCard), GetRandomCards(ref tempCard) };
+            //List<Card> level1_4 = new List<Card>() { GetRandomCards(ref tempCard), GetRandomCards(ref tempCard), GetRandomCards(ref tempCard), GetRandomCards(ref tempCard) };
+            //List<Card> level1_5 = new List<Card>() { GetRandomCards(ref tempCard), GetRandomCards(ref tempCard), GetRandomCards(ref tempCard), GetRandomCards(ref tempCard), GetRandomCards(ref tempCard) };
 
-            List<Card> level2_1 = new List<Card>() { GetRandomCards(ref tempCard) };
-            List<Card> level2_2 = new List<Card>() { GetRandomCards(ref tempCard), GetRandomCards(ref tempCard) };
-            List<Card> level2_3 = new List<Card>() { GetRandomCards(ref tempCard), GetRandomCards(ref tempCard), GetRandomCards(ref tempCard) };
-            List<Card> level2_4 = new List<Card>() { GetRandomCards(ref tempCard), GetRandomCards(ref tempCard), GetRandomCards(ref tempCard), GetRandomCards(ref tempCard) };
-            List<Card> level2_5 = new List<Card>() { GetRandomCards(ref tempCard), GetRandomCards(ref tempCard), GetRandomCards(ref tempCard), GetRandomCards(ref tempCard), GetRandomCards(ref tempCard) };
+            //List<Card> level2_1 = new List<Card>() { GetRandomCards(ref tempCard) };
+            //List<Card> level2_2 = new List<Card>() { GetRandomCards(ref tempCard), GetRandomCards(ref tempCard) };
+            //List<Card> level2_3 = new List<Card>() { GetRandomCards(ref tempCard), GetRandomCards(ref tempCard), GetRandomCards(ref tempCard) };
+            //List<Card> level2_4 = new List<Card>() { GetRandomCards(ref tempCard), GetRandomCards(ref tempCard), GetRandomCards(ref tempCard), GetRandomCards(ref tempCard) };
+            //List<Card> level2_5 = new List<Card>() { GetRandomCards(ref tempCard), GetRandomCards(ref tempCard), GetRandomCards(ref tempCard), GetRandomCards(ref tempCard), GetRandomCards(ref tempCard) };
 
-            List<Card> level3_1 = new List<Card>() { GetRandomCards(ref tempCard) };
-            List<Card> level3_2 = new List<Card>() { GetRandomCards(ref tempCard), GetRandomCards(ref tempCard) };
-            List<Card> level3_3 = new List<Card>() { GetRandomCards(ref tempCard), GetRandomCards(ref tempCard), GetRandomCards(ref tempCard) };
-            List<Card> level3_4 = new List<Card>() { GetRandomCards(ref tempCard), GetRandomCards(ref tempCard), GetRandomCards(ref tempCard), GetRandomCards(ref tempCard) };
-            List<Card> level3_5 = new List<Card>() { GetRandomCards(ref tempCard), GetRandomCards(ref tempCard), GetRandomCards(ref tempCard), GetRandomCards(ref tempCard), GetRandomCards(ref tempCard) };
+            //List<Card> level3_1 = new List<Card>() { GetRandomCards(ref tempCard) };
+            //List<Card> level3_2 = new List<Card>() { GetRandomCards(ref tempCard), GetRandomCards(ref tempCard) };
+            //List<Card> level3_3 = new List<Card>() { GetRandomCards(ref tempCard), GetRandomCards(ref tempCard), GetRandomCards(ref tempCard) };
+            //List<Card> level3_4 = new List<Card>() { GetRandomCards(ref tempCard), GetRandomCards(ref tempCard), GetRandomCards(ref tempCard), GetRandomCards(ref tempCard) };
+            //List<Card> level3_5 = new List<Card>() { GetRandomCards(ref tempCard), GetRandomCards(ref tempCard), GetRandomCards(ref tempCard), GetRandomCards(ref tempCard), GetRandomCards(ref tempCard) };
 
-            deck = new List<Card>() { GetRandomCards(ref tempCard), GetRandomCards(ref tempCard), GetRandomCards(ref tempCard), GetRandomCards(ref tempCard), GetRandomCards(ref tempCard), GetRandomCards(ref tempCard), GetRandomCards(ref tempCard), GetRandomCards(ref tempCard) };
-            //deck = new List<Card>() { card53, card53, card53, card53, card53, card53, card53, card53 };
+            List<Card> level1_1 = new List<Card>() { card1 };
+            List<Card> level1_2 = new List<Card>() { card2, card3 };
+            List<Card> level1_3 = new List<Card>() { card4, card5, card6 };
+            List<Card> level1_4 = new List<Card>() { card7, card8, card9, card10, };
+            List<Card> level1_5 = new List<Card>() { card11, card12, card13, card14, card15, };
+
+            List<Card> level2_1 = new List<Card>() { card16 };
+            List<Card> level2_2 = new List<Card>() { card17, card18, };
+            List<Card> level2_3 = new List<Card>() { card19, card20, card21 };
+            List<Card> level2_4 = new List<Card>() { card22, card23, card24, card25 };
+            List<Card> level2_5 = new List<Card>() { card26, card27, card28, card29, card30 };
+
+            List<Card> level3_1 = new List<Card>() { card31 };
+            List<Card> level3_2 = new List<Card>() { card32, card33 };
+            List<Card> level3_3 = new List<Card>() { card34, card35, card36 };
+            List<Card> level3_4 = new List<Card>() { card37, card38, card39, card40 };
+            List<Card> level3_5 = new List<Card>() { card41, card42, card43, card44, card45 };
+
+            //deck = new List<Card>() { GetRandomCards(ref tempCard), GetRandomCards(ref tempCard), GetRandomCards(ref tempCard), GetRandomCards(ref tempCard), GetRandomCards(ref tempCard), GetRandomCards(ref tempCard), GetRandomCards(ref tempCard), GetRandomCards(ref tempCard) };
+            deck = new List<Card>() { card53, card53, card53, card53, card53, card53, card53, card53 };
             
             //Card on hand
-            cardOnHand = GetRandomCards(ref tempCard);
+            //cardOnHand = GetRandomCards(ref tempCard);
+            cardOnHand = card53;
             //## ###################### #//
 
             //ListOfLevels
@@ -415,20 +439,50 @@ namespace TriTowers.Pages
             return result; 
         }
 
-        async void UpdatePoints(List<List<Card>> tower, CardIdentifier selectedCard)
+        void UpdatePoints(List<List<Card>> tower, CardIdentifier selectedCard)
         {
             //update points
             var cardsLeft = tower.SelectMany(i => i).Where(t => t != null).ToList();
             var cardsLeftLevel = tower[selectedCard.Level].Where(t => t != null).ToList();
-            
-            var addition = inGame.Stage * 1.5;
-            if (cardsLeft.Count == 0)
-                inGame.Points += (int)(150.00 * addition);
-            else if (cardsLeftLevel.Count == 0)
-                inGame.Points += (int)(20 * addition);
-            else
-                inGame.Points += (int)(10 * addition);
 
+            var points = 0;
+            var addition = inGame.Stage * 1.5;
+            points = (int)(10 * addition);
+            //inGame.Points += (int)(10 * addition);
+
+            //## idea 1            
+            //if (cardsLeft.Count == 0)
+            //    inGame.Points += (int)(150.00 * addition);
+            //else if (cardsLeftLevel.Count == 0)
+            //    inGame.Points += (int)(20 * addition);
+            //else
+            //    inGame.Points += (int)(10 * addition);
+
+            //## idea 2
+            if (cardsLeftLevel.Count == 0)
+            {
+                switch (selectedCard.Level)
+                {
+                    case 2:
+                        points += inGame.Level3Points;
+                        inGame.Level3Count++;
+                        break;
+                    case 1:
+                        points += inGame.Level2Points;
+                        inGame.Level2Count++;
+                        break;
+                    case 0:
+                        points += inGame.Level1Points;
+                        inGame.Level1Count++;
+                        break;
+                    default:
+                        break;
+                }
+            }
+
+            inGame.TotalStagePoints += points;
+            inGame.Points += points;
+            
             txtPoints.Text = inGame.Points.ToString();
 
             MessageDialog d = new MessageDialog("Good job");
@@ -559,10 +613,22 @@ namespace TriTowers.Pages
         private void DisplayFlyout_Bonus()
         {
             PauseGame();
+            flyBonus.Stage = inGame.Stage;
+            flyBonus.TotalScore = inGame.TotalStagePoints;
+            flyBonus.Level1 = inGame.Level1Count;
+            flyBonus.Level2 = inGame.Level2Count;
+            flyBonus.Level3 = inGame.Level3Count;
             flyBonus.Visibility = Windows.UI.Xaml.Visibility.Visible;
-            flyBonus.Margin = new Thickness(300, 200, 0, 0);
+            flyBonus.Margin = new Thickness(300, 150, 0, 0);
         }
-        
+
+        private void DisplayFlyout_LostBonus()
+        {
+            PauseGame();
+            flyLostBonus.Visibility = Windows.UI.Xaml.Visibility.Visible;
+            flyLostBonus.Margin = new Thickness(300, 200, 0, 0);
+        }
+
         private void DisplayFlyout_LostGame()
         {
             PauseGame();
@@ -582,6 +648,15 @@ namespace TriTowers.Pages
             PauseGame();
             flyFinishedGameWithHiScore.Visibility = Windows.UI.Xaml.Visibility.Visible;
             flyFinishedGameWithHiScore.Margin = new Thickness(300, 200, 0, 0);
+        }
+
+
+
+        private void DisplayFlyout_RestartGame()
+        {
+            PauseGame();
+            flyRestartGame.Visibility = Windows.UI.Xaml.Visibility.Visible;
+            flyRestartGame.Margin = new Thickness(300, 200, 0, 0);
         }
 
         private void DisplayFlyout_Instructions()
@@ -614,6 +689,13 @@ namespace TriTowers.Pages
             NextStage();
         }
 
+        void flyLostBonus_Continue()
+        {
+            flyLostBonus.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
+            inGame.GameIsPaused = false;
+
+            NextStage();
+        }
         void flyLostGame_Continue()
         {
             flyLostGame.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
@@ -637,7 +719,22 @@ namespace TriTowers.Pages
 
             StartGame();
         }
-        
+
+
+        void flyRestartGame_Continue()
+        {
+            flyRestartGame.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
+            inGame.GameIsPaused = false;
+
+            StartGame();
+        }
+        void flyRestartGame_Cancel()
+        {
+            flyRestartGame.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
+
+            UnPauseGame();
+        }
+
         void flyInstructions_Continue()
         {
             flyInstructions.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
@@ -705,7 +802,7 @@ namespace TriTowers.Pages
             inGame.NextRoundCount = 0;
             inGame.FreezeCount = 0;
             inGame.IsFreezed = false;
-            
+            inGame.TotalStagePoints = 0;
 
         }
 
@@ -774,8 +871,8 @@ namespace TriTowers.Pages
         {
             //restart the game
             MessageDialog dialog = new MessageDialog("Your time is up! Press Close to continue to next stage", "Time Up");
-            dialog.ShowAsync();
-
+            //dialog.ShowAsync();
+            DisplayFlyout_LostBonus();
             //StartGame();
         }
 
@@ -839,6 +936,11 @@ namespace TriTowers.Pages
         private void btnInstructions_Tapped(object sender, TappedRoutedEventArgs e)
         {
             DisplayFlyout_Instructions();
+        }
+
+        private void btnRestart_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            DisplayFlyout_RestartGame();
         }
 
     }
