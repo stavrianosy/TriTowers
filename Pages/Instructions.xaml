@@ -8,7 +8,52 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Canvas Background="#FF006600" >
-        <TextBlock Text="Instructions" FontSize="50" Canvas.Left="584" Canvas.Top="294"></TextBlock>
+    <Canvas Background="#FF006600">
+        <Canvas x:Name="cnvMain" Canvas.Left="250">
+        <Image Source="/Assets/InstructionsFull.png" Canvas.Left="17"></Image>
+        <TextBlock Text="The objective of the game is to remove all cards from the deck, in the given time." Canvas.Left="257" Canvas.Top="420" Width="430" Height="50" FontSize="18" TextAlignment="Center" TextWrapping="Wrap" LineHeight="24"/>
+        <TextBlock Text="-" Canvas.Left="257" Canvas.Top="470" Width="430" Height="15" FontSize="18" TextAlignment="Center" TextWrapping="Wrap"/>
+        <TextBlock Text="To achieve this goal, you have 3 chances." Canvas.Left="257" Canvas.Top="490" Width="430" Height="25" FontSize="18" TextAlignment="Center" TextWrapping="Wrap"/>
+        <TextBlock Text="-" Canvas.Left="257" Canvas.Top="520" Width="430" Height="15" FontSize="18" TextAlignment="Center" TextWrapping="Wrap"/>
+        <TextBlock Text="The more cards you remove the more points you get." Canvas.Left="257" Canvas.Top="540" Width="430" Height="25" FontSize="18" TextAlignment="Center" TextWrapping="Wrap"/>
+        <TextBlock Text="-" Canvas.Left="257" Canvas.Top="570" Width="430" Height="15" FontSize="18" TextAlignment="Center" TextWrapping="Wrap"/>
+        <TextBlock Text="As soon as you remove all cards, you move to the next stage, where you can collect even more points." Canvas.Left="257" Canvas.Top="590" Width="430" Height="50" FontSize="18" TextAlignment="Center" TextWrapping="Wrap" LineHeight="24"/>
+        <TextBlock Text="-" Canvas.Left="257" Canvas.Top="645" Width="430" Height="15" FontSize="18" TextAlignment="Center" TextWrapping="Wrap"/>
+        <TextBlock Text="You increase your chance to win and to collect more point with the Extras. You can get those Extras in different ways depending on how good you play." Canvas.Left="257" Canvas.Top="665" Width="430" Height="93" FontSize="18" TextAlignment="Center" TextWrapping="Wrap" LineHeight="24"/>
+
+        <TextBlock Text="The cards you have on hand can be used any time you run out of matches." Canvas.Left="188" Canvas.Top="272" Width="229" Height="67" FontSize="18" TextAlignment="Right" TextWrapping="Wrap"/>
+        <TextBlock Text="Tap on any card on any tower that its number is 1 less or greater than the displayed card." Canvas.Left="533" Canvas.Top="272" Width="266" Height="67" FontSize="18" TextWrapping="Wrap"/>
+
+            <Image x:Name="btnStartGame" Source="/Assets/btnStartNewGame.png" Canvas.Left="922" Canvas.Top="720" Tapped="btnStartNewGame_Tapped"></Image>
+            <Image x:Name="btnHome" Source="/Assets/btnHome.png" Canvas.Left="782" Canvas.Top="720" Tapped="GoHome"></Image>
+        </Canvas>
+        <VisualStateManager.VisualStateGroups>
+            <!-- Visual states reflect the application's view state -->
+            <VisualStateGroup x:Name="ApplicationViewStates">
+                <VisualState x:Name="FullScreenLandscape"/>
+                <VisualState x:Name="Filled"/>
+
+                <!-- The entire page respects the narrower 100-pixel margin convention for portrait -->
+                <VisualState x:Name="FullScreenPortrait">
+                    <Storyboard>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="cnvMain" Storyboard.TargetProperty="(Canvas.Left)">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="-50"/>
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="btnStartGame" Storyboard.TargetProperty="(Canvas.Left)">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="450"/>
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="btnHome" Storyboard.TargetProperty="(Canvas.Left)">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="310"/>
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="btnStartGame" Storyboard.TargetProperty="(Canvas.Top)">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="800"/>
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="btnHome" Storyboard.TargetProperty="(Canvas.Top)">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="800"/>
+                        </ObjectAnimationUsingKeyFrames>
+                    </Storyboard>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
     </Canvas>
 </common:LayoutAwarePage>

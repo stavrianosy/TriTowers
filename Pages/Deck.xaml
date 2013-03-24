@@ -9,7 +9,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-    <Grid Background="#FF006600" >
+    <Grid x:Name="grdMain" Background="#FF006600" >
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="0.3*"></ColumnDefinition>
                 <ColumnDefinition Width="740"></ColumnDefinition>
@@ -152,14 +152,14 @@
                        FontSize="24"/>
             <TextBlock x:Name="txtHiScore" 
                        Canvas.Top="32"
-                       Text="0" 
+                       Text="" 
                        TextAlignment="Right"                       
                        Width="76" 
                        Foreground="#FF222222" 
                        FontSize="12" Canvas.Left="40"/>
             <TextBlock x:Name="txtHiScoreDate" 
                        Canvas.Top="53"
-                       Text="0" 
+                       Text="" 
                        TextAlignment="Right"                       
                        Width="76" 
                        Foreground="#FF222222" 

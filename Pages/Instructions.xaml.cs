@@ -27,13 +27,13 @@ namespace TriTowers.Pages
             this.InitializeComponent();
         }
 
-        /// <summary>
-        /// Invoked when this page is about to be displayed in a Frame.
-        /// </summary>
-        /// <param name="e">Event data that describes how this page was reached.  The Parameter
-        /// property is typically used to configure the page.</param>
-        protected override void OnNavigatedTo(NavigationEventArgs e)
+        protected async override void LoadState(Object navigationParameter, Dictionary<String, Object> pageState)
         {
+        }
+
+        private void btnStartNewGame_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Pages.Deck));
         }
     }
 }

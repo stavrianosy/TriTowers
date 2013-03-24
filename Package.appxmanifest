@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
-  <Identity Name="84cd75d3-e9c9-4a34-84aa-658e528c687d" Publisher="CN=user" Version="1.0.0.0" />
+  <Identity Name="84cd75d3-e9c9-4a34-84aa-658e528c687d" Publisher="CN=user" Version="1.0.0.1" />
   <Properties>
     <DisplayName>TriTowers</DisplayName>
     <PublisherDisplayName>user</PublisherDisplayName>
@@ -15,8 +15,8 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="TriTowers.App">
-      <VisualElements DisplayName="TriTowers" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="TriTowers" ForegroundText="light" BackgroundColor="#464646">
-        <DefaultTile ShowName="allLogos" />
+      <VisualElements DisplayName="TriTowers" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="TriTowers" ForegroundText="light" BackgroundColor="#006600">
+        <DefaultTile ShortName="TriTowers" />
         <SplashScreen Image="Assets\SplashScreen.png" />
         <InitialRotationPreference>
           <Rotation Preference="portrait" />

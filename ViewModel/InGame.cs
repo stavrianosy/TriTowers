@@ -63,12 +63,12 @@ namespace TriTowers.ViewModel
             Stage = 1;
             CardsOnHand = 0;
             Chances = 2;
-            InitialTime = 30;
+            InitialTime = 50;
             ExtratimeOnStage = 30;
             Countdown = InitialTime;
             NextRoundCount = 0;
             FreezeCount = 0;
-            FreezeSet = 2;
+            FreezeSet = 3;
             FreezeDuration = 5;
             FreezeForSecs = 0;
             IsFreezed = false;

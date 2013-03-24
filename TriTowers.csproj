@@ -13,6 +13,7 @@
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{BC8A1FFA-BEE3-4634-8014-F334798102B3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <PackageCertificateKeyFile>TriTowers_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -171,6 +172,7 @@
     <Content Include="Assets\btnExit_home.png" />
     <Content Include="Assets\btnGoToBonus.png" />
     <Content Include="Assets\btnHiScores.png" />
+    <Content Include="Assets\btnHome.png" />
     <Content Include="Assets\btnInstructions.png" />
     <Content Include="Assets\btnInstructions_home.png" />
     <Content Include="Assets\btnInstructions_ovr.png" />
@@ -182,6 +184,7 @@
     <Content Include="Assets\btnSameGameovr.jpg" />
     <Content Include="Assets\btnStart.jpg" />
     <Content Include="Assets\btnStartGame_home.png" />
+    <Content Include="Assets\btnStartNewGame.png" />
     <Content Include="Assets\btnStartovr.jpg" />
     <Content Include="Assets\Cards\10c.png" />
     <Content Include="Assets\Cards\10d.png" />
@@ -242,15 +245,20 @@
     <Content Include="Assets\consoleTop.png" />
     <Content Include="Assets\counter.png" />
     <Content Include="Assets\coverCircle.png" />
-    <Content Include="Assets\Logo.png" />
+    <Content Include="Assets\InstructionsFull.png" />
+    <Content Include="Assets\Logo.scale-100.png" />
+    <Content Include="Assets\Logos\logo.png" />
+    <Content Include="Assets\Logos\logo_small.png" />
+    <Content Include="Assets\Logos\logo_splash.png" />
+    <Content Include="Assets\Logos\logo_store.png" />
     <Content Include="Assets\msg1.png" />
     <Content Include="Assets\msg2.png" />
     <Content Include="Assets\msg3.png" />
     <Content Include="Assets\msg4.jpg" />
     <Content Include="Assets\separator.jpg" />
-    <Content Include="Assets\SmallLogo.png" />
-    <Content Include="Assets\SplashScreen.png" />
-    <Content Include="Assets\StoreLogo.png" />
+    <Content Include="Assets\SmallLogo.scale-100.png" />
+    <Content Include="Assets\SplashScreen.scale-100.png" />
+    <Content Include="Assets\StoreLogo.scale-100.png" />
     <Content Include="Common\ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
